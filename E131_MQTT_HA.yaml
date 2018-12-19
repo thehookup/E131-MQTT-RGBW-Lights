@@ -1,0 +1,19 @@
+light:
+  - platform: mqtt
+    name: "Zemismart E131 and MQTT"
+    command_topic: "[MQTT_CLIENT_NAME]/power"
+    state_topic: "[MQTT_CLIENT_NAME]/powerState"
+    brightness_command_topic: "[MQTT_CLIENT_NAME]/brightness"
+    brightness_state_topic: "[MQTT_CLIENT_NAME]/brightnessState"
+    rgb_command_topic: "[MQTT_CLIENT_NAME]/color"
+    rgb_state_topic: "[MQTT_CLIENT_NAME]/colorState"
+    white_value_command_topic: "[MQTT_CLIENT_NAME]/white"
+    white_value_state_topic: "[MQTT_CLIENT_NAME]/whiteState"
+    white_value_scale: 255
+    brightness_scale: 255
+    effect_command_topic: "[MQTT_CLIENT_NAME]/effect"
+    effect_state_topic: "[MQTT_CLIENT_NAME]/effectState"
+    effect_list:
+      - MQTT
+      - E131
+    retain: true

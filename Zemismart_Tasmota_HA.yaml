@@ -1,0 +1,58 @@
+light:
+  - platform: mqtt
+    name: "Tasmota Zemismart Light"
+
+    command_topic: "cmnd/Zemismart/POWER"
+    state_topic: "stat/Zemismart/POWER"
+    payload_on: "ON"
+    payload_off: "OFF"
+
+    brightness_command_topic: "cmnd/Zemismart/DIMMER"
+    brightness_scale: 100
+    brightness_state_topic: "stat/Zemismart/DIMMER"
+    brightness_value_template: "{{ value_json.Dimmer }}"
+
+    rgb_command_topic: "cmnd/ZemismartNR/COLOR"
+    rgb_command_template: "{{ '%02X%02X%02X' | format(red, green, blue) }}"
+    rgb_state_topic: "stat/Zemismart/CHANNEL"
+    rgb_value_template: "{{ value_json.Color[0:2]|int(base=16) }},{{ value_json.Color[2:4]|int(base=16) }},{{ value_json.Color[4:6]|int(base=16) }}"
+
+    white_value_command_topic: "cmnd/Zemismart/Channel4"
+    white_value_state_topic: "stat/Zemismart/CHANNEL"
+    white_value_scale: 100
+    white_value_template: "{{ value_json.Color[6:8]|int(base=16) / 255 * 100}}"
+
+    effect_command_topic: "cmnd/Zemismart/SCHEME"
+    effect_state_topic: "stat/Zemismart/SCHEME"
+    effect_value_template: "{{ value_json.Scheme }}"
+    effect_list:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+
+    availability_topic: "tele/Zemismart/LWT"
+    payload_available: "Online"
+    payload_not_available: "Offline"
+  - platform: mqtt_json
+    name: "Holiday Lights"
+    state_topic: "holidayLights/state"
+    command_topic: "holidayLights/commands"
+    effect: true
+    brightness: true
+    effect_list:
+      - Color_Chase
+      - Color_Glitter
+      - Single_Race
+      - Double_Crash
+      - Rainbow
+      - Blocked_Colors
+      - BPM
+      - Twinkle
+      - Fire
+      - Spooky_Eyes
+      - Halloween
+      - Ripple
+      - LED_Locator
+    qos: 1
