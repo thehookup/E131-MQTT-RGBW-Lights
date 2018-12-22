@@ -1,28 +1,8 @@
-/*
-* ESP8266_Test.ino - Simple sketch to listen for E1.31 data on an ESP8266 
-*                    and print some statistics.
-*
-* Project: E131 - E.131 (sACN) library for Arduino
-* Copyright (c) 2015 Shelby Merrick
-* http://www.forkineye.com
-*
-*  This program is provided free for you to use in any way that you wish,
-*  subject to the laws and regulations where you are using it.  Due diligence
-*  is strongly suggested before using this code.  Please give credit where due.
-*
-*  The Author makes no warranty of any kind, express or implied, with regard
-*  to this program or the documentation contained in this document.  The
-*  Author shall not be liable in any event for incidental or consequential
-*  damages in connection with, or arising out of, the furnishing, performance
-*  or use of these programs.
-*
-*/
-
-#include <ESP8266WiFi.h>
-#include <ESPAsyncE131.h>
-#include <my92xx.h>
-#include <ArduinoOTA.h> 
-#include <PubSubClient.h> 
+#include <ESP8266WiFi.h> //If you get an error here you need to install the ESP8266 board manager
+#include <ESPAsyncE131.h> //https://github.com/forkineye/ESPAsyncE131
+#include <my92xx.h> //https://github.com/xoseperez/my92xx
+#include <ArduinoOTA.h> //ArduinoOTA is included in the ArduinoIDE now
+#include <PubSubClient.h> //https://github.com/knolleary/pubsubclient
 
 
 #define MY92XX_MODEL    MY92XX_MODEL_MY9231     // The MY9291 is a 4-channel driver, usually for RGBW lights
