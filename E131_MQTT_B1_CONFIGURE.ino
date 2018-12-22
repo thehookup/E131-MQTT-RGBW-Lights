@@ -2,7 +2,7 @@
 #include <ESP8266WiFi.h> //If you get an error here you need to install the ESP8266 board manager
 #include <ESPAsyncE131.h> //https://github.com/forkineye/ESPAsyncE131
 #include <my92xx.h> //https://github.com/xoseperez/my92xx
-#include <ArduinoOTA.h> //https://github.com/esp8266/Arduino/tree/master/libraries/ArduinoOTA
+#include <ArduinoOTA.h> //ArduinoOTA is included in the ArduinoIDE now
 #include <PubSubClient.h> //https://github.com/knolleary/pubsubclient
 
 
