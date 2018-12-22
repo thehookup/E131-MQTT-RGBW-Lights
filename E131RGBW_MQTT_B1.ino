@@ -1,3 +1,4 @@
+//requires ESPAsyncUDP: https://github.com/me-no-dev/ESPAsyncUDP
 #include <ESP8266WiFi.h> //If you get an error here you need to install the ESP8266 board manager
 #include <ESPAsyncE131.h> //https://github.com/forkineye/ESPAsyncE131
 #include <my92xx.h> //https://github.com/xoseperez/my92xx
