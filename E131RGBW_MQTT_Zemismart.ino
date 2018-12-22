@@ -1,9 +1,8 @@
-
-#include <ESP8266WiFi.h>
-#include <ESPAsyncE131.h>
-#include <my92xx.h>
-#include <ArduinoOTA.h> 
-#include <PubSubClient.h> 
+#include <ESP8266WiFi.h> //If you get an error here you need to install the ESP8266 board manager
+#include <ESPAsyncE131.h> //https://github.com/forkineye/ESPAsyncE131
+#include <my92xx.h> //https://github.com/xoseperez/my92xx
+#include <ArduinoOTA.h> //ArduinoOTA is included in the ArduinoIDE now
+#include <PubSubClient.h> //https://github.com/knolleary/pubsubclient
 
 
 #define MY92XX_MODEL    MY92XX_MODEL_MY9291     // The MY9291 is a 4-channel driver, usually for RGBW lights
