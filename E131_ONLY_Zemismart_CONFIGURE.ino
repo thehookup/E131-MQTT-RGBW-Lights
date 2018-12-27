@@ -3,7 +3,6 @@
 #include <ESPAsyncE131.h> //https://github.com/forkineye/ESPAsyncE131
 #include <my92xx.h> //https://github.com/xoseperez/my92xx
 #include <ArduinoOTA.h> //https://github.com/esp8266/Arduino/tree/master/libraries/ArduinoOTA
-#include <PubSubClient.h> //https://github.com/knolleary/pubsubclient
 
 #define MY92XX_MODEL    MY92XX_MODEL_MY9291     // The MY9291 is a 4-channel driver, usually for RGBW lights
 #define MY92XX_CHIPS    1                       // No daisy-chain
@@ -15,7 +14,6 @@
 my92xx _my92xx = my92xx(MY92XX_MODEL, MY92XX_CHIPS, MY92XX_DI_PIN, MY92XX_DCKI_PIN, MY92XX_COMMAND_DEFAULT);
 ESPAsyncE131 e131(UNIVERSE_COUNT);
 WiFiClient espClient;
-PubSubClient client(espClient);
 
 //USER CONFIGURED SECTION START//
 #define OTA_CLIENT_NAME    "B1_2" //This name will be used for arduinoOTA only
