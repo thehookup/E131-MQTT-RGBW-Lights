@@ -6,6 +6,10 @@ This repository is to accompany my RGBW E131 MQTT Firmware Video:
 
 Control Zemismart lights and the Sonoff B1 via E131 (xlights or vixen)
 
+Use These upload settings:
+
+[![IMAGE ALT TEXT HERE](https://github.com/thehookup/E131-MQTT-RGBW-Lights/blob/master/upload_settings.JPG?raw=true)](https://github.com/thehookup/E131-MQTT-RGBW-Lights/blob/master/upload_settings.JPG?raw=true)
+
 Use the E131_MQTT_Zemismart_CONFIGURE.ino file for standard setup of Zemismart lights using xLights.
 
 Use the E131_MQTT_B1_CONFIGURE.ino file for standard setup of Sonoff B1 lights using xLights.
