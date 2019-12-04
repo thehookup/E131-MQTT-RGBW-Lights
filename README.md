@@ -8,15 +8,14 @@ Control RGBW Lights via E131 (xlights or vixen)
 ## These lights have firmware written specifically for them:
 
 Zemismart 6" RGBW Downlight: https://amzn.to/34MiRF7
-
 Firmware: https://github.com/thehookup/E131-MQTT-RGBW-Lights/blob/master/E131_MQTT_Zemismart_CONFIGURE.ino
 
-Lohas RGB-CCT Bulb: https://amzn.to/33GPkv2
 
+Lohas RGB-CCT Bulb: https://amzn.to/33GPkv2
 Firmware: https://github.com/thehookup/E131-MQTT-RGBW-Lights/blob/master/E131RGBW_MQTT_Lohas_CONFIGURE.ino
 
-Novostella RGB-CCT Flood Lights: https://amzn.to/2rV1zak
 
+Novostella RGB-CCT Flood Lights: https://amzn.to/2rV1zak
 Firmware: https://github.com/thehookup/E131-MQTT-RGBW-Lights/blob/master/E131RGBW_MQTT_Novostella.ino
 
 
