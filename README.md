@@ -4,7 +4,7 @@ This repository is to accompany my RGBW E131 MQTT Firmware Video:
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/r5gju3l6AFQ/0.jpg)](https://www.youtube.com/watch?v=r5gju3l6AFQ)
 
-## Control RGBW Lights via E131 (xlights or vixen)
+Control RGBW Lights via E131 (xlights or vixen)
 ## These lights have firmware written specifically for them:
 
 Zemismart 6" RGBW Downlight: https://amzn.to/34MiRF7
