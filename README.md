@@ -25,4 +25,23 @@ Firmware is uploaded for the Sonoff B1, I highly recommend using the Lohas inste
 
 [![IMAGE ALT TEXT HERE](https://github.com/thehookup/E131-MQTT-RGBW-Lights/blob/master/upload_settings.JPG?raw=true)](https://github.com/thehookup/E131-MQTT-RGBW-Lights/blob/master/upload_settings.JPG?raw=true)
 
-
+```yaml
+  - platform: mqtt
+    name: "RGBW E131 Firmware"
+    command_topic: "[ClientID]/power"
+    state_topic: "[ClientID]/powerState"
+    brightness_command_topic: "[ClientID]/brightness"
+    brightness_state_topic: "[ClientID]/brightnessState"
+    rgb_command_topic: "[ClientID]/color"
+    rgb_state_topic: "[ClientID]/colorState"
+    white_value_command_topic: "[ClientID]/white"
+    white_value_state_topic: "[ClientID]/whiteState"
+    white_value_scale: 255
+    brightness_scale: 255
+    effect_command_topic: "[ClientID]/effect"
+    effect_state_topic: "[ClientID]/effectState"
+    effect_list:
+      - MQTT
+      - E131
+    retain: true
+```
