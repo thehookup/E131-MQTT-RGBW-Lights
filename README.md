@@ -45,3 +45,10 @@ Firmware is uploaded for the Sonoff B1, I highly recommend using the Lohas inste
       - E131
     retain: true
 ```
+
+Add the following lines of YAML if you are using a file with WW/CW control
+
+```
+  color_temp_command_topic: “[ClientID]/color_temp"
+  color_temp_state_topic: “[ClientID]/color_tempState”
+```
